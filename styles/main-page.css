@@ -1,0 +1,143 @@
+.news_wrapper {
+  background: #454343;
+  padding: 50px 100px;
+
+  .title {
+    border-left: 6px solid #1766ff;
+    padding-left: 20px;
+    max-width: 1240px;
+    margin: 0px auto 36px auto;
+  }
+  .news_item {
+    padding: 24px;
+    border: 1px solid #fff;
+    border-radius: 35px;
+    max-width: 398px;
+    display: inline-block;
+    margin: 0 11px;
+    text-align: left;
+  }
+  .carousel {
+    margin: 0px auto;
+    max-width: 1440px;
+    .carousel-inner {
+      max-width: 1440px;
+      .carousel-item {
+        max-width: 1440px;
+        text-align: center;
+      }
+      .img {
+        width: 100%;
+        height: 80vh;
+        aspect-ratio: 16/9;
+        object-fit: cover;
+      }
+    }
+    .carousel-control-prev,
+    .carousel-control-next {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+    }
+
+    .carousel-control-prev {
+      left: -50px;
+    }
+
+    .carousel-control-next {
+      right: -50px;
+    }
+
+    .carousel-inner {
+      position: relative;
+    }
+  }
+}
+.services_wrapper {
+  background: #f9f9f9;
+  .container {
+    padding: 50px 100px;
+    .title {
+      border-left: 6px solid #1766ff;
+      padding-left: 20px;
+      max-width: 1240px;
+      margin-bottom: 36px;
+    }
+
+    .services_item {
+      padding: 20px 24px;
+      background: #fff;
+      border-radius: 26px;
+      width: 400px;
+    }
+    .ceremonies_wrapper {
+      width: 715px;
+      .ceremonies_item {
+        padding: 32px 40px;
+        border-radius: 26px;
+        background: #0e44ab;
+        max-width: 340px;
+      }
+    }
+  }
+}
+
+.links_wrapper {
+  background: #f9f9f9;
+  .container {
+    padding: 50px 100px;
+    .title {
+      border-left: 6px solid #1766ff;
+      padding-left: 20px;
+      max-width: 1240px;
+      margin-bottom: 36px;
+    }
+    .links_item {
+      padding: 20px 24px;
+      background: #fff;
+      border-radius: 26px;
+      max-width: 389px;
+      display: flex;
+      flex-direction: column;
+      row-gap: 20px;
+      .icon {
+        display: flex;
+        justify-content: center;
+      }
+      .text_variant_3_Inter {
+        color: #121926;
+      }
+      .text_variant_1-2_normal {
+        color: #0e44ab;
+      }
+    }
+  }
+}
+
+.connection_wrapper {
+  background: #f9f9f9;
+  .container {
+    padding: 50px 100px;
+    .title {
+      border-left: 6px solid #1766ff;
+      padding-left: 20px;
+      max-width: 1240px;
+      margin-bottom: 36px;
+    }
+    .input-form {
+      width: 400px;
+    }
+    .iframe_wrapper {
+      width: 820px;
+      .iframe {
+        width: 100%;
+        height: 404px;
+        border-radius: 26px;
+      }
+    }
+  }
+}
+
+.modal_wrapper {
+  max-width: 448px;
+}

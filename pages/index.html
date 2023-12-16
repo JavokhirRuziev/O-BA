@@ -1,0 +1,947 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <link rel="icon" href="/public/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="/styles/main.css" />
+    <link rel="stylesheet" href="/styles/header.css" />
+    <link rel="stylesheet" href="/styles/footer.css" />
+    <link rel="stylesheet" href="/styles/main-page.css" />
+    <link rel="stylesheet" href="/public/fonts/stylesheet.css" />
+    <link rel="stylesheet" href="/javascript/main.js" />
+    <link href="/dist/output.css" rel="stylesheet" />
+    <title>O'BA</title>
+  </head>
+  <body>
+    <!-- modal -->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal_wrapper">
+        <div class="modal-content">
+          <div class="modal-header flex justify-center">
+            <p
+              class="modal-title fs-5 text_variant_1-5 text-black text-center"
+              id="exampleModalLabel"
+            >
+              Bog’lanish
+            </p>
+          </div>
+          <div class="modal-body">
+            <div class="flex flex-col gap-y-5 input-form">
+              <div class="relative">
+                <input
+                  type="text"
+                  class="input-base"
+                  placeholder="Ism Familiya"
+                />
+                <div
+                  class="absolute inset-y-0 left-0 pl-2 flex items-center pointer-events-none"
+                >
+                  <img
+                    src="/public/icons/connection/human.svg"
+                    alt="/public/icons/connection/human.svg"
+                  />
+                </div>
+              </div>
+              <div class="relative">
+                <input
+                  type="text"
+                  class="input-base"
+                  placeholder="Telefon Raqam"
+                />
+                <div
+                  class="absolute inset-y-0 left-0 pl-2 flex items-center pointer-events-none"
+                >
+                  <img
+                    src="/public/icons/connection/phone.svg"
+                    alt="/public/icons/connection/phone.svg"
+                  />
+                </div>
+              </div>
+              <div class="relative">
+                <input type="text" class="input-base" placeholder="E-mail" />
+                <div
+                  class="absolute inset-y-0 left-0 pl-2 flex items-center pointer-events-none"
+                >
+                  <img
+                    src="/public/icons/connection/mail.svg"
+                    alt="/public/icons/connection/mail.svg"
+                  />
+                </div>
+              </div>
+              <textarea
+                class="input-base"
+                style="padding-left: 16px"
+                placeholder="Xabaringiz"
+              ></textarea>
+              <div class="flex justify-center">
+                <button class="btn-secondary">
+                  <p class="text">Yuborish</p>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- modal -->
+
+    <header>
+      <div class="topbar">
+        <a href="/pages/index.html"
+          ><img src="/public/icons/logo.svg" alt="Logo" class="logo"
+        /></a>
+        <div id="contacts">
+          <div class="contacts_child">
+            <div>
+              <img
+                src="/public/icons/header/clock.png"
+                alt="/public/icons/header/clock.png"
+              />
+            </div>
+            <p class="text_variant_1">Dushanba – Juma, 09:00 – 18:00</p>
+          </div>
+          <div class="contacts_child">
+            <div>
+              <img
+                src="/public/icons/header/call.png"
+                alt="/public/icons/header/call.png"
+              />
+            </div>
+            <p class="text_variant_1">+998 71 233 95 86</p>
+          </div>
+        </div>
+        <div class="change_lang relative">
+          <p class="text_variant_1">UZ</p>
+          <img src="/public/icons/header/dropDown.svg" alt="" />
+          <div class="dropdown right-0">
+            <div class="flex flex-col gap-y-3">
+              <p
+                class="text_variant_1_normal text-gray-900 hover:text-blue-800"
+              >
+                Uzbek
+              </p>
+              <p
+                class="text_variant_1_normal text-gray-900 hover:text-blue-800"
+              >
+                Русский
+              </p>
+              <p
+                class="text_variant_1_normal text-gray-900 hover:text-blue-800"
+              >
+                English
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="header_categories">
+        <div id="categories">
+          <div class="header_button">
+            <a href="/pages/index.html"><p class="text">Bosh sahifa</p></a>
+          </div>
+          <div class="header_button relative">
+            <p class="text">Akademiya haqida</p>
+            <img
+              src="/public/icons/header/dropDown.svg"
+              alt="/public/icons/header/dropDown.svg"
+            />
+            <div class="dropdown">
+              <div class="flex flex-col gap-y-3">
+                <a href="/pages/about-us/index.html">
+                  <p
+                    class="text_variant_1_normal text-gray-900 hover:text-blue-800"
+                  >
+                    Akademiya tarixi
+                  </p>
+                </a>
+                <a href="/pages/about-us/academy-structure.html">
+                  <p
+                    class="text_variant_1_normal text-gray-900 hover:text-blue-800"
+                  >
+                    Akademiya tuzilmasi
+                  </p>
+                </a>
+                <a href="/pages/about-us/management.html">
+                  <p
+                    class="text_variant_1_normal text-gray-900 hover:text-blue-800"
+                  >
+                    Rahbariyat
+                  </p></a
+                >
+                <a href="/pages/about-us/hardware.html">
+                  <p
+                    class="text_variant_1_normal text-gray-900 hover:text-blue-800"
+                  >
+                    Markaziy apparat
+                  </p></a
+                >
+                <a href="/pages/about-us/academics.html">
+                  <p
+                    class="text_variant_1_normal text-gray-900 hover:text-blue-800"
+                  >
+                    Akademiklar
+                  </p>
+                </a>
+                <a href="/pages/about-us/organizations.html">
+                  <p
+                    class="text_variant_1_normal text-gray-900 hover:text-blue-800"
+                  >
+                    Tashkilotlar
+                  </p>
+                </a>
+                <a href="/pages/about-us/institutions.html">
+                  <p
+                    class="text_variant_1_normal text-gray-900 hover:text-blue-800"
+                  >
+                    O’quv muassasalari
+                  </p></a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="header_button">
+            <a href="/pages/news/index.html">
+              <p class="text">Yangiliklar</p>
+            </a>
+          </div>
+          <div class="header_button relative">
+            <p class="text">Mediateka</p>
+            <img
+              src="/public/icons/header/dropDown.svg"
+              alt="/public/icons/header/dropDown.svg"
+            />
+            <div class="dropdown">
+              <div class="flex flex-col gap-y-3">
+                <a href="/pages/medias/state-programs.html">
+                  <p
+                    class="text_variant_1_normal text-gray-900 hover:text-blue-800"
+                  >
+                    Davlat dasturi
+                  </p>
+                </a>
+                <a href="/pages/medias/videos-section.html">
+                  <p
+                    class="text_variant_1_normal text-gray-900 hover:text-blue-800"
+                  >
+                    Videolar
+                  </p>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="header_button relative">
+            <a href="/pages/index.html">
+              <p class="text">Axborot xizmati</p>
+            </a>
+            <img
+              src="/public/icons/header/dropDown.svg"
+              alt="/public/icons/header/dropDown.svg"
+            />
+            <div class="dropdown">
+              <div class="flex flex-col gap-y-3">
+                <p
+                  class="text_variant_1_normal text-gray-900 hover:text-blue-800"
+                >
+                  Tadbirlar
+                </p>
+                <p
+                  class="text_variant_1_normal text-gray-900 hover:text-blue-800"
+                >
+                  Hujjatlar
+                </p>
+                <p
+                  class="text_variant_1_normal text-gray-900 hover:text-blue-800"
+                >
+                  Bo’sh ish o’rinlari
+                </p>
+                <p
+                  class="text_variant_1_normal text-gray-900 hover:text-blue-800"
+                >
+                  Ochiq ma’lumotlar
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="header_button">
+            <a href="/pages/index.html">
+              <p class="text">Davlat dasturi</p>
+            </a>
+          </div>
+          <div class="header_button">
+            <a href="/pages/index.html">
+              <p class="text">Korrupsiyaga qarshi</p>
+            </a>
+          </div>
+          <div class="header_button">
+            <a href="/pages/index.html">
+              <p class="text">Ochiq malumotlar</p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section>
+      <div class="main_slide">
+        <div id="carouselExample" class="carousel slide">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img class="img" src="/public/fake-photo.jpeg" alt="fake-photo" />
+            </div>
+            <div class="carousel-item active">
+              <img class="img" src="/public/fake-photo.jpeg" alt="fake-photo" />
+            </div>
+            <div class="carousel-item active">
+              <img class="img" src="/public/fake-photo.jpeg" alt="fake-photo" />
+            </div>
+          </div>
+          <div class="slider_text">
+            <p class="text_variant_2 text-center">
+              Lorem ipsum dolor sit amet consectetur. Diam dui sed eget dui
+              senectus luctus. Tempor diam velit.
+            </p>
+            <div class="button_wrapper">
+              <button
+                type="button"
+                class="btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+              >
+                <span class="text">Подробное</span>
+              </button>
+            </div>
+          </div>
+          <div class="carousel-indicators">
+            <div
+              type="button"
+              data-bs-target="#carouselExample"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></div>
+            <div
+              type="button"
+              data-bs-target="#carouselExample"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></div>
+            <div
+              type="button"
+              data-bs-target="#carouselExample"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExample"
+            data-bs-slide="prev"
+          >
+            <img src="/public/icons/header/prev.svg" alt="" />
+          </button>
+          <button
+            class="carousel-control-next color"
+            type="button"
+            data-bs-target="#carouselExample"
+            data-bs-slide="next"
+          >
+            <img src="/public/icons/header/next.svg" alt="" />
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="news_wrapper">
+        <div class="title">
+          <p class="text_variant_2">So’nggi yangiliklar</p>
+          <p class="text_variant_3">Lorem ipsum dolor sit amet consectetur</p>
+        </div>
+
+        <div class="slider">
+          <div id="carouselExample-news" class="carousel slide">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="news_item">
+                  <img
+                    src="/public/main-page/Rectangle 9.png"
+                    alt="fake-photo"
+                  />
+                  <div class="mt-3 flex flex-col gap-y-2">
+                    <div class="flex items-center gap-x-1">
+                      <img src="/public/icons/news/data.svg" alt="fake-photo" />
+                      <p class="text_variant_1_normal">Noyabr 22, 2023</p>
+                    </div>
+                    <p class="text_variant_1-5">Ранглар рақси</p>
+                    <p class="text_variant_1-2_normal">
+                      Ўзбекистон Бадиий академиясининг “Академия” галереясида 20
+                      ноябрь куни Ўзбекистон Бадиий ижодкорлар уюшмаси аъзоси,
+                      Ўзбекистон ...
+                    </p>
+                  </div>
+                </div>
+                <div class="news_item">
+                  <img
+                    src="/public/main-page/Rectangle 9.png"
+                    alt="fake-photo"
+                  />
+                  <div class="mt-3 flex flex-col gap-y-2">
+                    <div class="flex items-center gap-x-1">
+                      <img src="/public/icons/news/data.svg" alt="fake-photo" />
+                      <p class="text_variant_1_normal">Noyabr 22, 2023</p>
+                    </div>
+                    <p class="text_variant_1-5">Ранглар рақси</p>
+                    <p class="text_variant_1-2_normal">
+                      Ўзбекистон Бадиий академиясининг “Академия” галереясида 20
+                      ноябрь куни Ўзбекистон Бадиий ижодкорлар уюшмаси аъзоси,
+                      Ўзбекистон ...
+                    </p>
+                  </div>
+                </div>
+                <div class="news_item">
+                  <img
+                    src="/public/main-page/Rectangle 9.png"
+                    alt="fake-photo"
+                  />
+                  <div class="mt-3 flex flex-col gap-y-2">
+                    <div class="flex items-center gap-x-1">
+                      <img src="/public/icons/news/data.svg" alt="fake-photo" />
+                      <p class="text_variant_1_normal">Noyabr 22, 2023</p>
+                    </div>
+                    <p class="text_variant_1-5">Ранглар рақси</p>
+                    <p class="text_variant_1-2_normal">
+                      Ўзбекистон Бадиий академиясининг “Академия” галереясида 20
+                      ноябрь куни Ўзбекистон Бадиий ижодкорлар уюшмаси аъзоси,
+                      Ўзбекистон ...
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item active">
+                <div class="news_item">
+                  <img
+                    src="/public/main-page/Rectangle 9.png"
+                    alt="fake-photo"
+                  />
+                  <div class="mt-3 flex flex-col gap-y-2">
+                    <div class="flex items-center gap-x-1">
+                      <img src="/public/icons/news/data.svg" alt="fake-photo" />
+                      <p class="text_variant_1_normal">Noyabr 22, 2023</p>
+                    </div>
+                    <p class="text_variant_1-5">Ранглар рақси</p>
+                    <p class="text_variant_1-2_normal">
+                      Ўзбекистон Бадиий академиясининг “Академия” галереясида 20
+                      ноябрь куни Ўзбекистон Бадиий ижодкорлар уюшмаси аъзоси,
+                      Ўзбекистон ...
+                    </p>
+                  </div>
+                </div>
+                <div class="news_item">
+                  <img
+                    src="/public/main-page/Rectangle 9.png"
+                    alt="fake-photo"
+                  />
+                  <div class="mt-3 flex flex-col gap-y-2">
+                    <div class="flex items-center gap-x-1">
+                      <img src="/public/icons/news/data.svg" alt="fake-photo" />
+                      <p class="text_variant_1_normal">Noyabr 22, 2023</p>
+                    </div>
+                    <p class="text_variant_1-5">Ранглар рақси</p>
+                    <p class="text_variant_1-2_normal">
+                      Ўзбекистон Бадиий академиясининг “Академия” галереясида 20
+                      ноябрь куни Ўзбекистон Бадиий ижодкорлар уюшмаси аъзоси,
+                      Ўзбекистон ...
+                    </p>
+                  </div>
+                </div>
+                <div class="news_item">
+                  <img
+                    src="/public/main-page/Rectangle 9.png"
+                    alt="fake-photo"
+                  />
+                  <div class="mt-3 flex flex-col gap-y-2">
+                    <div class="flex items-center gap-x-1">
+                      <img src="/public/icons/news/data.svg" alt="fake-photo" />
+                      <p class="text_variant_1_normal">Noyabr 22, 2023</p>
+                    </div>
+                    <p class="text_variant_1-5">Ранглар рақси</p>
+                    <p class="text_variant_1-2_normal">
+                      Ўзбекистон Бадиий академиясининг “Академия” галереясида 20
+                      ноябрь куни Ўзбекистон Бадиий ижодкорлар уюшмаси аъзоси,
+                      Ўзбекистон ...
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item active">
+                <div class="news_item">
+                  <img
+                    src="/public/main-page/Rectangle 9.png"
+                    alt="fake-photo"
+                  />
+                  <div class="mt-3 flex flex-col gap-y-2">
+                    <div class="flex items-center gap-x-1">
+                      <img src="/public/icons/news/data.svg" alt="fake-photo" />
+                      <p class="text_variant_1_normal">Noyabr 22, 2023</p>
+                    </div>
+                    <p class="text_variant_1-5">Ранглар рақси</p>
+                    <p class="text_variant_1-2_normal">
+                      Ўзбекистон Бадиий академиясининг “Академия” галереясида 20
+                      ноябрь куни Ўзбекистон Бадиий ижодкорлар уюшмаси аъзоси,
+                      Ўзбекистон ...
+                    </p>
+                  </div>
+                </div>
+                <div class="news_item">
+                  <img
+                    src="/public/main-page/Rectangle 9.png"
+                    alt="fake-photo"
+                  />
+                  <div class="mt-3 flex flex-col gap-y-2">
+                    <div class="flex items-center gap-x-1">
+                      <img src="/public/icons/news/data.svg" alt="fake-photo" />
+                      <p class="text_variant_1_normal">Noyabr 22, 2023</p>
+                    </div>
+                    <p class="text_variant_1-5">Ранглар рақси</p>
+                    <p class="text_variant_1-2_normal">
+                      Ўзбекистон Бадиий академиясининг “Академия” галереясида 20
+                      ноябрь куни Ўзбекистон Бадиий ижодкорлар уюшмаси аъзоси,
+                      Ўзбекистон ...
+                    </p>
+                  </div>
+                </div>
+                <div class="news_item">
+                  <img
+                    src="/public/main-page/Rectangle 9.png"
+                    alt="fake-photo"
+                  />
+                  <div class="mt-3 flex flex-col gap-y-2">
+                    <div class="flex items-center gap-x-1">
+                      <img src="/public/icons/news/data.svg" alt="fake-photo" />
+                      <p class="text_variant_1_normal">Noyabr 22, 2023</p>
+                    </div>
+                    <p class="text_variant_1-5">Ранглар рақси</p>
+                    <p class="text_variant_1-2_normal">
+                      Ўзбекистон Бадиий академиясининг “Академия” галереясида 20
+                      ноябрь куни Ўзбекистон Бадиий ижодкорлар уюшмаси аъзоси,
+                      Ўзбекистон ...
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-indicators">
+              <div
+                type="button"
+                data-bs-target="#carouselExample-news"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></div>
+              <div
+                type="button"
+                data-bs-target="#carouselExample-news"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+              ></div>
+              <div
+                type="button"
+                data-bs-target="#carouselExample-news"
+                data-bs-slide-to="2"
+                aria-label="Slide 3"
+              ></div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExample-news"
+              data-bs-slide="prev"
+            >
+              <img src="/public/icons/header/prev.svg" alt="" />
+            </button>
+            <button
+              class="carousel-control-next color"
+              type="button"
+              data-bs-target="#carouselExample-news"
+              data-bs-slide="next"
+            >
+              <img src="/public/icons/header/next.svg" alt="" />
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="services_wrapper">
+        <div class="container">
+          <div class="title">
+            <p class="text_variant_2 text-black">Interaktiv xizmatlar</p>
+            <p class="text_variant_3 text-black">
+              Lorem ipsum dolor sit amet consectetur
+            </p>
+          </div>
+          <div class="flex gap-x-5">
+            <div class="services_item">
+              <div class="flex justify-center mb-3">
+                <img
+                  src="/public/icons/services/mail.svg"
+                  alt="/public/icons/services/mail.svg"
+                />
+              </div>
+              <p class="text_variant_1-2_medium text-black text-center mb-1">
+                Elektron pochta
+              </p>
+              <p class="text_variant_1_normal text-black text-center">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna
+              </p>
+            </div>
+            <div class="services_item">
+              <div class="flex justify-center mb-3">
+                <img
+                  src="/public/icons/services/questions.svg"
+                  alt="/public/icons/services/questions.svg"
+                />
+              </div>
+              <p class="text_variant_1-2_medium text-black text-center mb-1">
+                Savol-javoblar
+              </p>
+              <p class="text_variant_1_normal text-black text-center">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna
+              </p>
+            </div>
+            <div class="services_item">
+              <div class="flex justify-center mb-3">
+                <img
+                  src="/public/icons/services/message.svg"
+                  alt="/public/icons/services/message.svg"
+                />
+              </div>
+              <p class="text_variant_1-2_medium text-black text-center mb-1">
+                Ochiq ma’lumotlar
+              </p>
+              <p class="text_variant_1_normal text-black text-center">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="container flex gap-x-11 items-center">
+          <div class="ceremonies_wrapper">
+            <div class="row gap-x-8 mb-6">
+              <div class="ceremonies_item">
+                <p class="text_variant_4">15</p>
+                <p class="text_variant_1-5 text-center">
+                  O’tkazilgan tadbirlar
+                </p>
+              </div>
+              <div class="ceremonies_item">
+                <p class="text_variant_4">15</p>
+                <p class="text_variant_1-5 text-center">
+                  O’tkazilgan tadbirlar
+                </p>
+              </div>
+            </div>
+            <div class="row gap-x-8">
+              <div class="ceremonies_item">
+                <p class="text_variant_4">15</p>
+                <p class="text_variant_1-5 text-center">
+                  O’tkazilgan tadbirlar
+                </p>
+              </div>
+              <div class="ceremonies_item">
+                <p class="text_variant_4">15</p>
+                <p class="text_variant_1-5 text-center">
+                  O’tkazilgan tadbirlar
+                </p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <img
+              class="w-121"
+              src="/public/main-page/news-banner.png"
+              alt="/public/main-page/news-banner.png"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="links_wrapper">
+        <div class="container">
+          <div class="title">
+            <p class="text_variant_2 text-black">Foydali havolalar</p>
+            <p class="text_variant_3 text-black">
+              Lorem ipsum dolor sit amet consectetur
+            </p>
+          </div>
+          <div class="row gap-5">
+            <div class="links_item col-4">
+              <div class="icon">
+                <img
+                  src="/public/icons/links/logo-russian.svg"
+                  alt="/public/icons/links/logo-russian.svg"
+                />
+              </div>
+              <div>
+                <p class="text_variant_3_Inter text-gray-900 text-center mb-2">
+                  Oʻzbekiston Respublikasi Prezidentining rasmiy veb-sayti
+                </p>
+                <p class="text_variant_1-2_normal text-blue-900 text-center">
+                  madaniyat.uz
+                </p>
+              </div>
+            </div>
+            <div class="links_item col-4">
+              <div class="icon">
+                <img
+                  src="/public/icons/links/link-logo-2.svg"
+                  alt="/public/icons/links/link-logo-2.svg"
+                />
+              </div>
+              <div>
+                <p class="text_variant_3_Inter text-gray-900 text-center mb-2">
+                  Murojaatlar bilan ishlash yagona onlayn platformasi
+                </p>
+                <p class="text_variant_1-2_normal text-blue-900 text-center">
+                  murojaat.gov.uz
+                </p>
+              </div>
+            </div>
+            <div class="links_item col-4">
+              <div class="icon">
+                <img
+                  src="/public/icons/links/link-icon-3.svg"
+                  alt="/public/icons/links/link-icon-3.svg"
+                />
+              </div>
+              <div>
+                <p class="text_variant_3_Inter text-gray-900 text-center mb-2">
+                  Oʻzbekiston Milliy axborot agentligi
+                </p>
+                <p class="text_variant_1-2_normal text-blue-900 text-center">
+                  uza.uz
+                </p>
+              </div>
+            </div>
+            <div class="links_item col-4">
+              <div class="icon">
+                <img
+                  src="/public/icons/links/link-icon-4.svg"
+                  alt="/public/icons/links/link-icon-4.svg"
+                />
+              </div>
+              <div>
+                <p class="text_variant_3_Inter text-gray-900 text-center mb-2">
+                  Oʻzbekiston Respublikasi Prezidentining rasmiy veb-sayti
+                </p>
+                <p class="text_variant_1-2_normal text-blue-900 text-center">
+                  madaniyat.uz
+                </p>
+              </div>
+            </div>
+            <div class="links_item col-4">
+              <div class="icon">
+                <img
+                  src="/public/icons/links/logo-russian.svg"
+                  alt="/public/icons/links/logo-russian.svg"
+                />
+              </div>
+              <div>
+                <p class="text_variant_3_Inter text-gray-900 text-center mb-2">
+                  Oʻzbekiston Respublikasi Prezidentining rasmiy veb-sayti
+                </p>
+                <p class="text_variant_1-2_normal text-blue-900 text-center">
+                  madaniyat.uz
+                </p>
+              </div>
+            </div>
+            <div class="links_item col-4">
+              <div class="icon">
+                <img
+                  src="/public/icons/links/logo-russian.svg"
+                  alt="/public/icons/links/logo-russian.svg"
+                />
+              </div>
+              <div>
+                <p class="text_variant_3_Inter text-gray-900 text-center mb-2">
+                  Oʻzbekiston Respublikasi Prezidentining rasmiy veb-sayti
+                </p>
+                <p class="text_variant_1-2_normal text-blue-900 text-center">
+                  madaniyat.uz
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="connection_wrapper">
+        <div class="container">
+          <div class="title">
+            <p class="text_variant_2 text-black">Bog’lanish</p>
+            <p class="text_variant_3 text-black">
+              Lorem ipsum dolor sit amet consectetur
+            </p>
+          </div>
+          <div class="flex gap-x-5">
+            <div class="flex flex-col gap-y-5 input-form">
+              <div class="relative">
+                <input
+                  type="text"
+                  class="input-base"
+                  placeholder="Ism Familiya"
+                />
+                <div
+                  class="absolute inset-y-0 left-0 pl-2 flex items-center pointer-events-none"
+                >
+                  <img
+                    src="/public/icons/connection/human.svg"
+                    alt="/public/icons/connection/human.svg"
+                  />
+                </div>
+              </div>
+              <div class="relative">
+                <input
+                  type="text"
+                  class="input-base"
+                  placeholder="Telefon Raqam"
+                />
+                <div
+                  class="absolute inset-y-0 left-0 pl-2 flex items-center pointer-events-none"
+                >
+                  <img
+                    src="/public/icons/connection/phone.svg"
+                    alt="/public/icons/connection/phone.svg"
+                  />
+                </div>
+              </div>
+              <div class="relative">
+                <input type="text" class="input-base" placeholder="E-mail" />
+                <div
+                  class="absolute inset-y-0 left-0 pl-2 flex items-center pointer-events-none"
+                >
+                  <img
+                    src="/public/icons/connection/mail.svg"
+                    alt="/public/icons/connection/mail.svg"
+                  />
+                </div>
+              </div>
+              <textarea
+                class="input-base"
+                style="padding-left: 16px"
+                placeholder="Xabaringiz"
+              ></textarea>
+              <button class="btn-secondary">
+                <p class="text">Yuborish</p>
+              </button>
+            </div>
+            <div class="iframe_wrapper">
+              <iframe
+                class="iframe"
+                src="https://yandex.ru/map-widget/v1/-/CCUryJDqGC"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer_wrapper">
+        <div class="container">
+          <div class="row">
+            <div class="col-3">
+              <img src="/public/icons/logo-dark.svg" alt="Logo" class="logo" />
+            </div>
+            <div class="col-3">
+              <div class="footer_item">
+                <p class="text_variant_1 text-white">Bosh sahifa</p>
+              </div>
+              <div class="footer_item">
+                <p class="text_variant_1 text-white">Yangiliklar</p>
+              </div>
+              <div class="footer_item">
+                <p class="text_variant_1 text-white">Akademiya tarixi</p>
+              </div>
+              <div class="footer_item">
+                <p class="text_variant_1 text-white">Davlat dasturi</p>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="footer_item">
+                <p class="text_variant_1 text-white">Akademiklar</p>
+              </div>
+              <div class="footer_item">
+                <p class="text_variant_1 text-white">Rahbariyat</p>
+              </div>
+              <div class="footer_item">
+                <p class="text_variant_1 text-white">Korrupsiyaga qarshi</p>
+              </div>
+              <div class="footer_item">
+                <p class="text_variant_1 text-white">Ochiq malumotlar</p>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="footer_item flex items-center gap-x-2">
+                <div>
+                  <img
+                    class="w-6"
+                    src="/public/icons/footer/location.svg"
+                    alt=""
+                  />
+                </div>
+                <p class="text_variant_1 text-white">
+                  100000, Toshkent shahar, Mirzo Ulug‘bek tumani, Sodiq Azimov
+                  ko’chasi 35
+                </p>
+              </div>
+              <div class="footer_item flex items-center gap-x-2">
+                <div class="w-6">
+                  <img src="/public/icons/footer/clock.svg" alt="" />
+                </div>
+                <p class="text_variant_1 text-white">
+                  Dushanba – Juma, 09:00 – 18:00
+                </p>
+              </div>
+              <div class="footer_item flex items-center gap-x-2">
+                <div class="w-6">
+                  <img src="/public/icons/footer/phone.svg" alt="" />
+                </div>
+                <p class="text_variant_1 text-white">+998 71 233 95 86</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="bottom_wrapper">
+          <div class="container">
+            <p class="text_variant_1 text-white text-center">
+              © 2019. Barcha huquqlar himoyalangan.
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="/javascript/main.js" type="module"></script>
+    <script src="/bootstrap-5.3.2-dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

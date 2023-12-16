@@ -1,0 +1,230 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import "/bootstrap-5.3.2-dist/css/bootstrap.css";
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.color {
+  color: #000;
+}
+
+.container {
+  margin: 0px auto 0px auto;
+  max-width: 1440px;
+}
+
+.logo_text {
+  text-transform: uppercase;
+  font-family: "Display-Bold", sans-serif;
+  color: #0045ac;
+  max-width: 162px;
+}
+
+.logo_icon {
+  display: flex;
+  column-gap: 10px;
+  padding: 12px;
+  align-items: center;
+}
+
+.text_variant_1 {
+  color: #475467;
+  font-family: "Display-Medium", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+.text_variant_1_normal {
+  color: #fff;
+  font-family: "Display-Regular", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+.text_variant_1_normal_navigation {
+  color: #475467;
+  font-family: "Display-Regular", sans-serif;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.text_variant_1-5 {
+  color: #fff;
+  font-family: "Display-Medium", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 32px;
+}
+.text_variant_1-2_normal {
+  color: #fff;
+  font-family: "Display-Regular", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+}
+.text_variant_1-2_medium {
+  color: #fff;
+  font-family: "Display-Medium", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 30px;
+}
+
+.text_variant_2 {
+  color: #fff;
+  font-family: "Poppins-Medium", sans-serif;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -0.64px;
+}
+
+.text_variant_3 {
+  color: #fff;
+  font-family: "Poppins-Regular", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.36px;
+}
+.text_variant_3_Inter {
+  color: #fff;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.text_variant_4 {
+  color: #fff;
+  text-align: center;
+  font-family: "Display-Medium", sans-serif;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 60px;
+}
+
+.text_variant_5 {
+  color: #1f1f1f;
+  font-family: SF Pro Display;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 44px;
+}
+
+.btn-primary {
+  border-radius: 28px;
+  border: 2px solid #fff;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(2px);
+  padding: 16px 44px;
+  .text {
+    color: #fff;
+    text-align: center;
+    font-family: "Poppins-Medium", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: -0.32px;
+  }
+}
+.btn-primary {
+  border-radius: 28px;
+  border: 2px solid #fff;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(2px);
+  padding: 16px 44px;
+  .text {
+    color: #fff;
+    text-align: center;
+    font-family: "Poppins-Medium", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: -0.32px;
+  }
+  &__small {
+    padding: 10px 30px;
+  }
+}
+
+.btn-secondary {
+  border-radius: 10px;
+  background: var(--brand-color-main-color, #0e44ab);
+  max-width: 400px;
+  width: 100%;
+  padding: 16px 33px;
+
+  .text {
+    color: #fff;
+    text-align: center;
+    font-family: "Display-Medium", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+  }
+}
+
+.input-base {
+  border-radius: 10px;
+  border: 1px solid #d0d5dd;
+  background: var(--primary-color-white, #fff);
+  padding: 14px 40px;
+  width: 100%;
+  &::placeholder {
+    color: #98a2b3;
+    font-family: "Display-Regular", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+  }
+}
+.input-borderless {
+  border-radius: 16px;
+  background: var(--primary-color-white, #fff);
+  padding: 20px 46px;
+  width: 100%;
+  &::placeholder {
+    color: #475467;
+    font-family: "Display-Regular", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+  }
+}
+
+.border_box {
+  border-radius: 26px;
+  background: #fff;
+}
