@@ -21,5 +21,18 @@
   .container {
     padding: 50px 0px 100px;
     max-width: 1240px;
+    .videos_item {
+      display: flex;
+      flex-direction: column;
+      row-gap: 12px;
+      .video {
+        width: 400px;
+        height: 263px;
+        border-radius: 26px;
+      }
+      .text_variant_1-5 {
+        color: #121926;
+      }
+    }
   }
 }
