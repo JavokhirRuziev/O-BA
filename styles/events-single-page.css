@@ -22,8 +22,11 @@
     padding: 50px 0px 100px;
     max-width: 1240px;
     .item_big_image {
-      width: 1240px;
-      height: 551px;
+      max-width: 1240px;
+      width: 100%;
+      height: auto;
+      aspect-ratio: 16/9;
+      object-fit: cover;
       border-radius: 36px;
     }
     .text_variant_1-2_normal {

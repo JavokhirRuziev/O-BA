@@ -5,6 +5,25 @@
     max-width: 1440px;
     .footer_item {
       padding: 16px 10px;
+      margin: 10px 0px;
+    }
+  }
+  .bottom_wrapper {
+    background: #170071;
+    .container {
+      padding: 16px 10px;
+    }
+  }
+}
+.footer_wrapper_mobile {
+  display: none;
+  background: #0e44ab;
+  .container {
+    padding: 50px 100px;
+    max-width: 1440px;
+    .footer_item {
+      padding: 16px 10px;
+      margin: 10px 0px;
     }
   }
   .bottom_wrapper {

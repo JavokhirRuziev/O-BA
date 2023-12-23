@@ -25,10 +25,12 @@
       display: flex;
       flex-direction: column;
       row-gap: 12px;
+      align-items: center;
       .video {
-        width: 400px;
+        max-width: 400px;
         height: 263px;
         border-radius: 26px;
+        width: 100%;
       }
       .text_variant_1-5 {
         color: #121926;

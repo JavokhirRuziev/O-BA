@@ -26,9 +26,10 @@
       width: 400px;
       padding: 25px;
 
-      img {
+      .img {
         width: 278px;
         height: 278px;
+        object-fit: contain;
       }
     }
   }

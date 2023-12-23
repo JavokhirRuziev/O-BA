@@ -24,10 +24,12 @@
     max-width: 1440px;
     .academics_item {
       width: 400px;
+      padding: 25px;
 
-      img {
+      .img {
         width: 278px;
         height: 278px;
+        object-fit: contain;
       }
     }
   }
