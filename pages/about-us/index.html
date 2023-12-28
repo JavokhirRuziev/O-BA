@@ -323,6 +323,84 @@
     </div>
     <!-- sidebar-menu  -->
 
+    <!-- modal -->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal_wrapper">
+        <div class="modal-content">
+          <div class="modal-header flex justify-center">
+            <p
+              class="modal-title fs-5 text_variant_1-5 text-black text-center"
+              id="exampleModalLabel"
+            >
+              Bog’lanish
+            </p>
+          </div>
+          <div class="modal-body">
+            <div class="flex flex-col gap-y-5 input-form">
+              <div class="relative">
+                <input
+                  type="text"
+                  class="input-base"
+                  placeholder="Ism Familiya"
+                />
+                <div
+                  class="absolute inset-y-0 left-0 pl-2 flex items-center pointer-events-none"
+                >
+                  <img
+                    src="/public/icons/connection/human.svg"
+                    alt="/public/icons/connection/human.svg"
+                  />
+                </div>
+              </div>
+              <div class="relative">
+                <input
+                  type="text"
+                  class="input-base"
+                  placeholder="Telefon Raqam"
+                />
+                <div
+                  class="absolute inset-y-0 left-0 pl-2 flex items-center pointer-events-none"
+                >
+                  <img
+                    src="/public/icons/connection/phone.svg"
+                    alt="/public/icons/connection/phone.svg"
+                  />
+                </div>
+              </div>
+              <div class="relative">
+                <input type="text" class="input-base" placeholder="E-mail" />
+                <div
+                  class="absolute inset-y-0 left-0 pl-2 flex items-center pointer-events-none"
+                >
+                  <img
+                    src="/public/icons/connection/mail.svg"
+                    alt="/public/icons/connection/mail.svg"
+                  />
+                </div>
+              </div>
+              <textarea
+                class="input-base"
+                style="padding-left: 16px"
+                placeholder="Xabaringiz"
+              ></textarea>
+              <div class="flex justify-center">
+                <button class="btn-secondary">
+                  <p class="text">Yuborish</p>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- modal -->
+
     <header>
       <div class="topbar">
         <a href="/pages/index.html"
@@ -347,6 +425,30 @@
             </div>
             <p class="text_variant_1">+998 71 233 95 86</p>
           </div>
+        </div>
+
+        <div class="contacts_wrapper">
+          <button
+            type="button"
+            class="btn-secondary bg-transparent border-black text-black"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal"
+            style="
+              border: 1px solid black !important;
+              border-radius: 28px;
+              padding: 7px 20px;
+              display: flex;
+              align-items: center;
+              column-gap: 5px;
+            "
+          >
+            <img
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAADgklEQVR4nO2ZaYiNURjHfxrGToxlhrGL0MQnRYoRMaGJZCkfKAyhTJZSKGuylWyZEMlnRbKWJcZ8sCUjkTLGloyZLFkac3XqufV0eufOfe97zkXdX50v7z3v/3mee5bnnOeFDBkyuGIgsAA4AVQAz4CPQANQC1QBt4FD0q8r/wDNgTnAXSAWstUDV4DJf8v5icCLFBwPahVAQTqdXy9TQzvxEzgLrAXGAgOATtK/I9AHmASsA24Bv633fwCl6XB+u2X4C7AZyA2p0xc4KIFrvd1AM0++M9cy9gAYHFGzQHS07iY80AWoUUbMwm3rSLsNcFFpm+k1FcfsVAbeAnmO9bOBcmXjDdDOpXitEl9q/d4PqASeAOMj2MkHPik7Zm05YZwSrZaA4pgFd9maw+eBMSkuxtVK57mPneew5fyuBPv7K8nMi4FCGSmztbYAWgHdZRMYCcwEtgFX1fvvXQVwTYlOV8/3WA4/Ctjfo7TjrgKoVKJD1POv6vkZIEt+3w+8i+j8TZUII/NBCZvtNM5W4LM4bM5FGhPMKGA5cAy4AzyVwL7LWegT8Bp4KFlc70ImyTmjXgkbx3xRqOzccymsh9YneT4WMDIXjfhs/JJlHbf/S2JpGm1vNKgANkQR6gasAW7IkdlcEYvxT7k1Cind2EbLfTYWcOnoH9B/imyH5phRlEA3mX6dgUvKpsnMocgWA40lmCMB71Rbx4fGSLZfT9WvLmwAE5rIkGYUengOoJfqZ6ZvKFYmkeZNdtUUiXOvmpizyfTLBy5EmUIbkwigBPcMl0uMbcsUCEJR2oTzj4H2HgI4atlpkApGaIoTOG8qazn4oUrZuSJrMSVyGznTm1tXa/wwVNmptW58KXE9IIB5+GOHsnPahWBJQADGiA9aSpUjbmeGC9Ec2X9j1vHWWZlDsULZqAq4GKXMloBRcF0x6yR/TFzfVCSc0dGqxMWkjjnCoY3T1r9vKnROWRUwCi+B3qqPKZUskqr0sBSnTszV3LdpLrV7O4ga+feeWM9/AdOS0F1obdWn8Mggq3zSVKuTz01BdAAOWP0f+Jg6NktCBBB3KttKVJut8oxp9+XilBZ0dTqZZr4lNHbOMe2cbBRpw9RBy0IEsEy9u089N8fp+fwlsoC9STj/wfrkZAI/CcxymaiiUJzg2vk63V8cU6WVLG5ThP0mNc+ydC7KDPwD/AGnhvGTtAC8XgAAAABJRU5ErkJ"
+              width="20"
+              height="20"
+            />
+            Связь
+          </button>
         </div>
         <div class="change_lang relative">
           <p class="text_variant_1">UZ</p>

@@ -263,6 +263,10 @@
   .state_single_sidebar {
     display: none;
   }
+  .contacts_wrapper {
+    margin-left: auto;
+    margin-right: 20px;
+  }
   .footer_wrapper {
     display: none;
     .container {
